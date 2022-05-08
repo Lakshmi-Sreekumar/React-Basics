@@ -1,0 +1,17 @@
+.loginpage{
+/*margin : 25px ;*/
+ border: 2px black solid; 
+ /* */ 
+ margin : 80px 460px 70px 460px;
+ 
+}
+h2{
+    border-bottom: 1px solid #747474;
+}
+.logindata{
+padding: 50px;
+padding-bottom: 50px;    
+}
+input[type=submit] {
+    width: 200px;
+  }

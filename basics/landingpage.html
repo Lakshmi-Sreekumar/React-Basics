@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles1.css">
+    <title>Temp Conversion</title>
+</head>
+<body onload="getName()">
+    <div><input type="text" value="Welcome" style="float: left;margin-top: 1px;border:none;color:blue;font-size: 50px;">
+    <input type="text" id="getuser" style="float: left; margin-top: 1px; border:none;outline:none;color:blue;font-size: 50px;"></div><br><br>
+    <form>
+        <h2>Convert Units</h2>
+        
+        <select name = "Values" style="margin-left: 15px; width: 80%; margin-bottom: 10px;">
+            <option value = "Temperature" selected>Temperature</option>
+            <option value = "Length">Length</option>
+            <option value = "Volume">Volume</option>
+            <br>
+        <div><input type="text" id="celsius" placeholder="Celsius" onkeyup="tempConversion()"></div>
+        <img src="https://th.bing.com/th/id/R.ff492d832d05685f17e6313fc4b8f797?rik=sYQy97bSKWTwsQ&riu=http%3a%2f%2fimg1.wikia.nocookie.net%2f__cb20130623083731%2fgrandchase%2fimages%2farchive%2fb%2fb2%2f20130623084147!Equal_sign.png&ehk=gcrxro3Jpmv%2fi3Z8W3%2buPtVHPAnWyqKkNT8fA%2fSlIGw%3d&risl=&pid=ImgRaw&r=0">
+        <div><input type="text" id="farenheit" placeholder="Fahrenheit"></div>
+        
+
+
+    </form>
+    <script>
+        function tempConversion(){
+            var celTemp = document.getElementById("celsius");
+            var farTemp = document.getElementById("farenheit");
+            farTemp.value = (celTemp.value*(9/5)) + 32;
+        }
+        function getName(){
+            var username = localStorage.getItem("username");
+            
+            //console.log("nmae",username);
+            document.getElementById("getuser").value = username;
+        }
+    </script>
+</body>
+</html>

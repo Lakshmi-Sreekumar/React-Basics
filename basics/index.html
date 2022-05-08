@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <title>Main Page</title>
+</head>
+<body>
+    <form action="#" onsubmit="return loginFunc(this)">
+        <div class="loginpage">
+            <div class ="logindata">
+            <h2>Log in</h2><br>
+            <div id = "id1"></div>
+           <label>Username</label><br> <input type="text" placeholder="Enter your username" id="name">
+          <br><br> <label>Password</label><br> <input type="password" placeholder="Enter your password" id="password"><br><br><br>
+        
+        <input type="submit" value="Login" style="background-color: lightblue;">
+    </div>
+    </div>
+      </form>
+      
+      <script>
+      function loginFunc() {
+        var name = document.getElementById("name").value;
+        var pswd = document.getElementById("password").value;
+        
+        localStorage.setItem("username",name);
+        if(name != '' && pswd != ''){
+            window.location.href = "http://127.0.0.1:5500/basics/landingpage.html";
+            
+            return false;
+        }
+        else{
+            alert("Enter Both username and password");
+        }
+      }
+
+      </script>
+     
+      
+    
+</body>
+</html>

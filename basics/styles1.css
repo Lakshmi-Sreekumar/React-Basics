@@ -1,0 +1,28 @@
+form {
+    width: 500px;
+    height: 250px;
+    border: 2px solid #000;
+    padding: 10px 0;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+h2{
+    margin-left: 15px;
+}
+#headval {
+
+margin: 15px;
+padding-right: 250px;
+
+}
+#celsius, #farenheit {
+    float: left;
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  
+    img {
+        float:left;
+        width: 15px;
+        height: auto
+      }
